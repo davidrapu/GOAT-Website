@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOAT</title>
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='images/football-award.ico')}}">
+</head>
+<body>
+    {% extends 'base.html'%}
+    {% block main %}
+
+    
+      <div id="introcontainer" class="container">
+        <div id="rowheader" class="row">
+          <div class="col"></div>
+          <div class="col-10"><h1>Who is The GOAT</h1></div>
+          <div class="col"></div>
+        </div>
+        <div class="row">
+          <p class="lead">
+            In the realm of football, debates over who truly deserves the title 
+            of the Greatest of All Time (GOAT) often ignite fiery discussions 
+            among fans worldwide. While acknowledging the exceptional talents 
+            of numerous players, the debate invariably narrows down to select 
+            individuals who have left an indelible mark on the sport. Among these 
+            luminaries stand two towering figures: Lionel Messi and Cristiano 
+            Ronaldo. Both players boast unparalleled achievements and have 
+            redefined the game in their own unique ways. However, as the 
+            adage goes, there can only be one GOAT which we decided to be Lionel Messi. So, let's delve deeper 
+            into the illustrious careers of these footballing icons to unravel 
+            the essence of their greatness.
+          </p>
+        </div>
+      </div>
+
+
+
+      <!-- Container that has all the data that compares messi to ronaldo. display default set to none -->
+      <div style="border-bottom: solid black;" class="container pt-5">
+        <div class="row pb-5">
+          <h4>Now lets compare both players based some topics</h4>
+        </div>
+        <div class="row">
+          <section class="hidden mb-4 ">
+            <button class="btn btn-lg btn-light fw-bold border-white bg-white mb-2" onclick="hideorshow('scoringchance')">Scoring Chances</button>
+            <p style="display: none;" id="scoringchance" class="sectiondata">
+              When it comes to goals per player, Lionel Messi and Cristiano Ronaldo are all examples.<br><br>
+              Profound expertise as resilient finishers on the football field. Messi's
+              astonishing stats reveal that he has scored 836 goals in 1058 Matches,
+              scoring an outstanding 79% of times put infront of the goal. 
+              On the other hand, Ronaldo has scored 874 goals in 1180 mathces
+              putting his finishing percentage at 74.1%.<br><br>
+              They are given context in their respective careers. Messi's stunning goal
+              consistent with sport ratio demonstrates his proficiency and consistency in
+              scoring from the bottom half, which is proof of his exceptional scoring 
+              ability. Also, Messi's satisfaction is even more impressive given that
+              he has not done as many of his suits as Ronaldo, underscoring his effect
+              in front of the camera. The discussion on scoring proficiency between Messi 
+              and Ronaldo will be intricate, taking into account the additional suits that 
+              Ronaldinho has put on.<br><br>
+              Although Ronaldo's goal tally is undeniably impressive, Messi has a better scoring ability
+            </p>
+          </section>
+        </div>
+
+        <div class="row">
+          <section class="hidden mb-4 ">
+            <button class="btn btn-lg btn-light fw-bold border-white bg-white mb-2" onclick="hideorshow('bettershooter')">The Better Shooter</button>
+            <p style="display: none;" id="bettershooter" class="sectiondata">
+              The numbers paint a clear picture: Ronaldo consistently outpaces Messi in shot attempts, 
+              tallying an impressive 3677 shots in league and Champions League matches since 2009/10, 
+              compared to Messi's 2972.<br>
+              Yet, Messi's efficiency is a marvel. He converts a higher percentage of his shots, finding the 
+              back of the net with every 5.27 attempts, whereas Ronaldo scores with every 6.43 shots.<br><br>
+              Messi's accuracy is another feather in his cap, with 47.21% of his shots on target compared to 
+              Ronaldo's 41.09%.<br>
+              However, Ronaldo's ability to generate such a high volume of attempts is remarkable in itself. 
+              Additionally, his prowess in shooting from long-range, as well as with his weaker foot and head, 
+              levels the playing field.<br><br>
+              In this statistical showdown, it's a tight race. While Messi boasts superior efficiency and accuracy, 
+              Ronaldo's sheer volume and versatility make this one too close to call.
+
+            </p>
+          </section>
+        </div>
+
+        <div class="row">
+          <section class="hidden mb-4 ">
+            <button class="btn btn-lg btn-light fw-bold border-white bg-white mb-2" onclick="hideorshow('hasmorehattricks')">Who Has More Hat-Tricks</button>
+            <p style="display: none;" id="hasmorehattricks" class="sectiondata">
+              Messi and Ronaldo continually astound with their remarkable prowess on the field, boasting 
+              an impressive combined total of 122 hat tricks. Messi has notched 57 career hat tricks, while 
+              Ronaldo has accumulated 65.<br><br>
+              While Ronaldo holds the lead in total hat tricks, Messi edges ahead slightly in terms of frequency. 
+              Messi achieves a hat trick every 18.5 games, whereas Ronaldo achieves one every 18.7 games.
+              Delving deeper into their statistics, in league competitions, Messi has secured 36 hat tricks 
+              compared to Ronaldo's 44. Similarly, in the Champions League, both Messi and Ronaldo have achieved 
+              8 hat tricks each. Beyond these, their domination extends to other competitions, with Messi having 
+              scored 13 hat tricks in domestic cup competitions and Ronaldo boasting 13 as well.<br><br>
+              Their extraordinary talent transcends borders, with Messi tallying 14 hat tricks for his national 
+              team, Argentina, while Ronaldo has recorded an astounding 9 hat tricks for Portugal.
+              These numbers not only underscore their individual brilliance but also serve as a testament 
+              to their enduring impact on the world of football. While Messi may have the edge in hat-trick conversion, 
+              Ronaldo's consistency and frequency showcase his remarkable skill and impact on the game.
+            </p>
+          </section>
+        </div>
+
+        <div class="row">
+          <section class="hidden mb-4 ">
+            <button class="btn btn-lg btn-light fw-bold border-white bg-white mb-2" onclick="hideorshow('betterpenaltytaker')">The Better Penalty Taker</button>
+            <p style="display: none;" id="betterpenaltytaker" class="sectiondata">
+              Ronaldo's ability from the penalty spot often overshadows Messi's abilities, but the 
+              gap between them might not be as wide as commonly believed. While Ronaldo is celebrated 
+              as the ultimate penalty king, the reality is more nuanced.<br><br>
+              Excluding shootouts, Ronaldo has successfully converted an impressive 164 penalties throughout
+              his career, but he's also missed 29. In contrast, Messi has netted 109 penalties but has missed
+              31.
+              This gives Ronaldo an overall penalty conversion rate of 85%, compared to Messi's 78%. 
+              While Ronaldo's numbers are indeed better, he's not infallible, especially when compared 
+              to other elite strikers like Lewandowski and Ibrahimovic, who boast even higher conversion rates.<br><br>
+              In terms of notable misses, Messi stumbled in the 2016 Copa America final shootout against Chile 
+              and the 2012 Champions League semi-final against Chelsea. Meanwhile, Ronaldo's significant misses 
+              include the heartbreak of the 2008 Champions League final shootout against Chelsea (although his 
+              team, Manchester United, ultimately prevailed) and the pivotal 2012 Champions League semi-final 
+              shootout against Bayern Munich, which proved costly for Real Madrid.
+            </p>
+          </section>
+        </div>
+
+        <div class="row">
+          <section class="hidden mb-4 ">
+            <button class="btn btn-lg btn-light fw-bold border-white bg-white mb-2" onclick="hideorshow('betteratfreekicks')">The Better Freekick Taker</button>
+            <p style="display: none;" id="betteratfreekicks" class="sectiondata">
+              In recent times, Messi has undoubtedly elevated himself as the premier free kick specialist, 
+              while Ronaldo's proficiency in this domain has seen a noticeable decline. However, to label 
+              this category as a clear-cut victory for Messi would be succumbing to recency bias.<br><br>
+              Consider this: from 2017 to 2019, Messi showcased his free kick mastery with an impressive 23 goals, 
+              leaving Ronaldo trailing with just 5. Yet, cast your mind back to the years spanning 2009 to 2011, 
+              and you'll find Ronaldo asserting his dominance with an astonishing 21 direct free kick goals 
+              compared to Messi's modest 3.<br>
+              Looking at their overall career statistics, Messi now boasts 65 free kick goals, slightly surpassing 
+              Ronaldo's tally of 63.<br><br>
+              While Ronaldo once seemed unassailable in this aspect, Messi's resurgence has not only closed the gap but also surpassed it. Furthermore, Messi now flaunts a superior free kick conversion rate, giving him the edge in this closely contested category.
+
+            </p>
+          </section>
+        </div>
+
+        <div class="row">
+          <section class="hidden mb-4 ">
+            <button class="btn btn-lg btn-light fw-bold border-white bg-white mb-2" onclick="hideorshow('betteratheading')">The Better Header</button>
+            <p style="display: none;" id="betteratheading" class="sectiondata">
+              When it comes to heading, there's no denying Ronaldo's dominance over Messi. The numbers speak 
+              volumes: throughout their careers, Ronaldo has soared with 148 headed goals in 1217 appearances, 
+              whereas Messi has managed just 27 headers in 1056 appearances.<br><br>
+              But it's not just about goals. Ronaldo's aerial prowess extends beyond scoring, as evidenced by his 
+              commanding presence in winning 781 aerial duels in league and Champions League matches since 2009/10, 
+              while Messi has claimed victory in only 117 aerial duels.<br>
+              It's not surprising when you consider their physical attributes, playing styles, and the tactics of 
+              their teams. Ronaldo's towering presence and athleticism naturally lend themselves to aerial battles, 
+              while Messi's smaller stature and nuanced approach see him excel in other facets of the game.<br><br>
+              In this category, Ronaldo's superiority is crystal clear, underlining his unparalleled ability in 
+              the air.
+
+            </p>
+          </section>
+        </div>
+
+        <div class="row">
+          <section class="hidden mb-4 ">
+            <button class="btn btn-lg btn-light fw-bold border-white bg-white mb-2" onclick="hideorshow('betteratpassing')">The Better Passer</button>
+            <p style="display: none;" id="betteratpassing" class="sectiondata">
+              When it comes to passing, Messi undeniably takes the spotlight, but Ronaldo's abilities in this 
+              area often fly under the radar.<br>
+              In league and Champions League matches since 2009/10, Messi has showcased his playmaking prowess 
+              with a staggering 1406 key passes in 599 appearances, while Ronaldo has contributed 942 key passes 
+              in 561 appearances.<br><br>
+              Messi's dominance extends to throughballs as well, with 450 successful throughballs in the same 
+              timeframe, compared to Ronaldo's 81.
+              While Messi's passing statistics stand out as superior, Ronaldo's numbers are still noteworthy. 
+              It's worth considering that Ronaldo's involvement in creative build-up play may have been more 
+              pronounced before 2009, which could have significantly boosted his passing stats during that period.<br><br>
+              In this category, Messi shines brightly, but Ronaldo's passing abilities should not be overlooked.
+            </p>
+          </section>
+        </div>
+
+        <div class="row">
+          <section class="hidden mb-4 ">
+            <button class="btn btn-lg btn-light fw-bold border-white bg-white mb-2" onclick="hideorshow('hasmoreassists')">Who Has More Assists</button>
+            <p style="display: none;" id="hasmoreassists" class="sectiondata">
+              When it comes to assists, Messi stands tall as the undisputed champion. His playmaking abilities 
+              rank among the best, and the numbers speak for themselves.
+              With an astounding 366 assists in 1056 career appearances, Messi's prowess in setting up goals 
+              is undeniable, dwarfing Ronaldo's respectable tally of 250 assists in 1217 games.<br><br>
+              However, it's essential not to overlook Ronaldo's proficiency in this aspect. While Messi holds a 
+              clear advantage in overall assists, Ronaldo's numbers are still incredibly impressive compared to 
+              the average player.<br>
+              In the prestigious arena of the Champions League, Ronaldo shines brightly with 41 assists to Messi's
+              40. Granted, Ronaldo has played 20 more matches than Messi, but this achievement is still noteworthy.<br><br>
+              While Ronaldo's assist numbers may not reach the heights of Messi's, they underscore his versatility and 
+              impact on the game. Nonetheless, Messi's remarkable overall assist stats rightfully earn him the title of 
+              the ultimate playmaker.
+
+            </p>
+          </section>
+        </div>
+
+        <div class="row">
+          <section class="hidden mb-4 ">
+            <button class="btn btn-lg btn-light fw-bold border-white bg-white mb-2" onclick="hideorshow('individualawards')">Who has more Awards</button>
+            <p style="display: none;" id="individualawards" class="sectiondata">
+              The sustained excellence of Messi and Ronaldo is truly unparalleled in football history. 
+              Their dominance over the coveted Ballon d'Or award exemplifies this, with Messi securing a 
+              remarkable 8 trophies compared to Ronaldo's impressive haul of 5. It's worth noting that no 
+              other player in history has managed to win more than 3 Ballons d'Or. The rivalry between Messi 
+              and Ronaldo has undoubtedly fueled their remarkable achievements, and it's not unthinkable that 
+              either of them could have clinched the award even more times if not for each other's presence.<br><br>
+              In UEFA's prestigious awards, Ronaldo holds a slight edge with 4 accolades, including 1 UEFA Club
+              Footballer of the Year, 2 UEFA Best Player in Europe titles, and 1 UEFA Men's Player of the Year 
+              award, while Messi has claimed 3 awards, including 1 UEFA Club Footballer of the Year and 2 UEFA 
+              Best Player in Europe titles.<br>
+              When it comes to individual scoring accolades, Messi has emerged as the top scorer in the league an 
+              astounding 8 times, clinching the European Golden Shoe on 6 occasions. Ronaldo, meanwhile, has 
+              claimed the league's top scorer title 5 times across various leagues, earning 4 European Golden 
+              Shoes in the process.<br><br>
+              In terms of spectacular goals, Ronaldo has clinched the Puskas award for the best goal in a calendar 
+              year, securing the honor twice with 2 nominations. Messi, despite being nominated an impressive 7 
+              times, has yet to claim this award.<br>
+              On the international stage, Messi has showcased his brilliance by winning the Golden Ball twice 
+              at the World Cup, in 2014 and 2022, leading his team to the final in the former. Additionally, 
+              he has been named Copa America's Best Player twice and Best Young Player once, further solidifying 
+              his status as a football icon.
+
+            </p>
+          </section>
+        </div>
+
+        <div class="row">
+          <section class="hidden mb-4 ">
+            <button class="btn btn-lg btn-light fw-bold border-white bg-white mb-2" onclick="hideorshow('moretrophies')">Who Has More Trophies</button>
+            <p style="display: none;" id="moretrophies" class="sectiondata">
+              In the realm of trophies, Messi holds the overall lead, boasting an impressive tally of 44 
+              trophies compared to Ronaldo's 35. This count includes Messi's triumphs in the 2008 Olympics 
+              and the 2005 U-20 World Cup.<br>
+              On the international stage, Messi has recently added both the Copa America and the World Cup 
+              with Argentina to his illustrious resume, while Ronaldo has secured the Euros with Portugal as 
+              well as a Nations League trophy.<br><br>
+              Delving into their club achievements, Messi's 12 league titles surpass Ronaldo's 7, yet Ronaldo 
+              claims the upper hand in Champions League triumphs, with 5 to Messi's 4. While the difference is 
+              marginal, Messi's overall trophy count currently places him ahead in this category.
+            </p>
+          </section>
+        </div>
+
+        <div class="row">
+          <section class="hidden mb-4 ">
+            <button class="btn btn-lg btn-light fw-bold border-white bg-white mb-2" onclick="hideorshow('internationallevel')">Better At An International Level</button>
+            <p style="display: none;" id="internationallevel" class="sectiondata">
+              It's fascinating to compare the international careers of Ronaldo and Messi, two giants of the 
+              modern football era. While their club performances often steal the spotlight, their contributions
+              to their national teams are also significant.<br><br>
+              Ronaldo's goal-scoring prowess for Portugal is truly remarkable, especially considering his status 
+              as the all-time leading goal scorer for his country. He has a knack for delivering when it matters 
+              most, evidenced by his Golden Boot at Euro 2021 and his success in major tournaments like the Euros 
+              and the UEFA Nations League.<br><br>
+              On the other hand, Messi's impact for Argentina is undeniable, even if his goal-scoring rate is 
+              slightly lower than Ronaldo's. His ability to create and influence games is unparalleled, earning 
+              him numerous individual awards and, most importantly, leading Argentina to victory in the 
+              Copa America and the World Cup, fulfilling a lifelong dream and ending years of heartache for 
+              his nation.<br><br>
+              While Ronaldo boasts an impressive collection of records and achievements at the international 
+              level, Messi's combination of individual accolades and team success, including triumphs in the 
+              most prestigious tournaments, sets him apart.
+            </p>
+          </section>
+        </div>
+      </div>
+
+
+
+
+      <div class="discussion">
+        <div class="row my-3">
+          <h7 style="color: #6c757d;">If you dont agree with us</h7>
+        </div>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col-6">
+            <a id="bttn" class="btn btn-lg btn-light fw-bold border-white bg-white" href="{{url_for('discussion')}}">Voice Out Your Opinion</a>
+          </div>
+          <div class="col"></div>
+        </div>
+      </div>
+
+
+
+    {% endblock %}
+</body>
+</html>

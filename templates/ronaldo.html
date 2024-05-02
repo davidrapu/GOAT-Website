@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronaldo</title>
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='images/football-award.ico')}}">
+</head>
+<style>
+    .sectiondata{
+        margin-bottom: 3em;
+    }
+</style>
+<body>
+    {% extends 'base.html'%}
+    {% block main %}
+
+        <div id="introcontainer" class="container text-center">
+            <div id="rowheader" class="row mb-4">
+            <div class="col"></div>
+            <div class="col-10"><h1>Cristiano Ronaldo</h1></div>
+            <div class="col"></div>
+            </div>
+            <div class="row">
+            <p class="lead">
+                Cristiano Ronaldo's illustrious career is marked by his journey from 
+                Sporting Lisbon to global stardom at Manchester United, Real Madrid, 
+                and Juventus. Along the way, he has amassed numerous accolades, including 
+                five Ballon d'Or awards, showcasing his exceptional talent, work ethic, and 
+                determination. Ronaldo's electrifying performances, characterized by his 
+                unparalleled skill and goal-scoring prowess, have left an indelible mark on 
+                the footballing world. Beyond his on-field achievements, his philanthropic 
+                efforts and professionalism exemplify his commitment to making a difference 
+                in the lives of others, solidifying his status as a revered figure both on 
+                and off the pitch.
+
+
+            </p>
+            </div>
+        </div>
+
+
+
+
+
+
+        
+        <div class="videocontainer py-5">
+            <iframe width="100%" height="400px" 
+            src="https://www.youtube.com/embed/OUKGsb8CpF8?si=CNFZfWWL4ozo9mrY" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+            </iframe>
+        </div>
+
+
+
+
+
+
+        <section id="intro" class="hidden">
+            <p class="sectiondata">
+                Cristiano Ronaldo's illustrious career is a testament to his exceptional talent 
+                and determination, as evidenced by his extensive collection of individual awards. 
+                With three Best FIFA Men's Player awards, five Ballon d'Or titles, and four UEFA 
+                Best Player in Europe awards, Ronaldo's prowess on the field has been consistently 
+                recognized at the highest level. He has also been honored as Footballer of The Year 
+                an impressive 14 times, further solidifying his status as one of the greatest players 
+                of all time.
+            </p>
+        </section>
+        <section id="intro" class="hidden">
+            <p class="sectiondata">
+                Ronaldo's journey from Sporting Lisbon to Manchester United and then to Real Madrid 
+                and Juventus has been marked by remarkable triumphs at every turn. His time at 
+                Manchester United saw him win three English Premier League titles and a UEFA 
+                Champions League trophy, while his spell at Real Madrid yielded four Champions 
+                League titles among numerous other domestic and international honors. Even after 
+                moving to Juventus, Ronaldo continued to shine, showcasing his goal-scoring prowess in Serie A.
+            </p>
+        </section>
+        <section id="intro" class="hidden">
+            <p class="sectiondata">
+                As Ronaldo potentially nears retirement, his return to Manchester United in 2021 symbolized 
+                a homecoming to a club where he had previously enjoyed immense success. His potential retirement 
+                at Al-Nassr, a Saudi Arabian club, would mark the culmination of a glittering career spanning 
+                over two decades. Throughout his journey, Ronaldo has epitomized unparalleled work ethic, 
+                dedication, and hunger for success, earning admiration and respect from fans, teammates, 
+                and opponents alike. With a total of 90 awards, including numerous Ballon d'Or titles and 
+                various individual accolades, Cristiano Ronaldo has undoubtedly etched his name among the 
+                footballing legends, leaving a lasting legacy as a true superstar of the sport.
+            </p>
+        </section>
+
+
+
+
+
+
+        <div class="hidden">
+            <div class="row text-center">
+                <div class="col"></div>
+                <div class="col-7"><h1 class="teamawardsheader">Teams Played For</h1></div>
+                <div class="col"></div>
+            </div>
+        </div>
+        <section class="hidden">
+            <p class="sectiondata">
+              <img class="floaterimage" src="{{url_for('static', filename = 'images/portugal.jpg')}}" alt="Portugal National Team Jersey with Logo">
+              Since joining Portugal's National Team in 2003, Cristiano Ronaldo has been a driving force 
+              behind the team's success, featuring in an impressive 206 matches and netting an astonishing 
+              128 goals while also providing 46 assists. His contributions were instrumental in Portugal 
+              clinching the European Championship once and securing victory in the UEFA Nations League. 
+              Ronaldo's leadership, skill, and determination have consistently propelled the national team 
+              to new heights on the international stage, solidifying his status as one of the greatest 
+              footballers of all time and a national hero in Portugal.
+            </p>
+        </section>
+        <section class="hidden">
+            <p class="sectiondata">
+              <img class="floaterimage" src="{{url_for('static', filename = 'images/manchester_united.jpg')}}" alt="Manchester United Team Logo">
+              During his tenure at Manchester United F.C. from 2003 to 2009 and his return in 2021 to 2022, 
+              Cristiano Ronaldo showcased his exceptional skills, scoring 145 goals and providing 65 assists. 
+              His achievements during these periods include winning one Ballon D'Or, one Champions League title, 
+              three English Premier League championships, one FIFA Club World Cup, one English FA Cup, two 
+              English League Cups, and two English Super Cups.
+            </p>
+        </section>
+        <section class="hidden">
+            <p class="sectiondata">
+                <img class="floaterimage" src="{{url_for('static', filename = 'images/realmadrid.jpg')}}" alt="Real Madrid Team Logo">
+                During his tenure at Real Madrid CF from 2009 to 2018, Cristiano Ronaldo left an indelible mark, 
+                scoring an incredible 450 goals and providing 131 assists. His remarkable achievements during this 
+                period include winning four Ballon d'Or awards, four Champions League titles, three FIFA Club World 
+                Cups, two Spanish La Liga championships, three UEFA Super Cups, two Spanish Cups, and one Spanish 
+                Super Cup.
+            </p>
+        </section>
+        <section class="hidden">
+            <p class="sectiondata">
+                <img class="floaterimage" src="{{url_for('static', filename = 'images/juventus.jpg')}}" alt="Juventus Team Logo">
+                Throughout his time at Juventus FC from 2018 to 2021, the striker made a significant mark, 
+                appearing in 134 matches and netting an impressive total of 101 goals while also providing 
+                22 assists. His tenure was highlighted by two Italian Championship titles, demonstrating his 
+                crucial role in the team's success. Additionally, he played a pivotal part in securing the 
+                Italian Cup once and the Italian Super Cup twice, solidifying his status as a key player 
+                during his time at the club.
+            </p>
+        </section>
+        <section class="hidden">
+            <p class="sectiondata">
+                <img class="floaterimage" src="{{url_for('static', filename = 'images/al-nassr.jpg')}}" alt="Al-Nassr Team Logo">
+                Since joining Al-Nassr FC in 2023, the striker has showcased remarkable prowess on the field,
+                amassing a commendable record of 50 goals and 14 assists in 56 matches. His impact has been 
+                nothing short of sensational, electrifying fans with his scoring prowess and playmaking abilities. 
+                Each match presents an opportunity for him to shine, and he consistently delivers, elevating the 
+                team's performance with his skill and determination. Despite his impressive statistics, he remains 
+                driven, hungry for further success, and committed to pushing the boundaries of his capabilities. 
+                As of now, his journey with Al-Nassr FC continues to unfold, with countless opportunities awaiting 
+                to be seized.
+            </p>
+        </section>
+
+    {% endblock %}
+</body>
+</html>

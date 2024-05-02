@@ -1,0 +1,170 @@
+html{
+    scroll-behavior: smooth;
+}
+
+/*The welcoming page*/
+.homeintrocontainer{
+    margin-top:2em;
+    margin-bottom: 2em;
+    animation: transitionIn 2s;
+
+}
+/* My transition */
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/*Making every link have the same color*/
+a:link{
+    color: rgba(222, 226, 230, .75);
+    text-decoration: none;
+}
+a:visited {
+    color: rgba(222, 226, 230, .75);
+    text-decoration: none;
+}
+/*The transition and decoration for any and all buttons (optional) or major links */
+#bttn{
+    transition-property: transform;
+    transition-duration: 1;
+    transition-timing-function: ease-in;
+    transition-delay: 0s;
+}
+#bttn:hover{
+    transform: translateY(-10px);
+    color: black;
+}
+/*The container that has the video of player*/
+.videocontainer{
+    margin-bottom:5em;
+    margin-top: 2em;
+    iframe{
+        border-radius: 2em;
+    }
+}
+/* Player Intro*/
+#rowheader{
+    margin-bottom: 1em;
+}
+#introcontainer{
+    margin-top: 2.5em;
+    margin-bottom: 8em;
+    animation: transitionIn 2s;
+}
+.lead{
+    color: rgb(228, 216, 216);
+}
+
+/*The part that includes information about the player*/
+.teamawardsheader{
+    margin-bottom: 1.5em;
+    margin-top: 2em;
+}
+.floaterimage{
+    float: left;
+    shape-outside: circle();
+    shape-margin: -3em;
+    width: 200px;
+    height: auto;
+    border-radius: 12em;
+}
+section{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    transition-timing-function: ease-in;
+    
+}
+#intro{
+    margin-bottom: 3em;
+}
+.sectiondata{
+    border: solid #6c757d;
+    border-radius: 2em;
+    background-color:black ;
+    box-shadow: rgba(255, 255, 255, 0.208) 0px 10px 20px;
+    text-align: left;
+    padding: 2em;
+}
+.hidden{
+    opacity: 0;
+    color: black;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.5s;
+}
+.show{
+    opacity:  1;
+    color: white;
+    filter: blur(0);
+    transform: translateX(0);
+}
+/*Comments portion of discussion*/
+.formcontainer{
+    background-color: black;
+    padding: 4em 4em 3em;
+    margin-bottom: 6em;
+    margin-top: 3em;
+    border-radius: 2em;
+    /* Beginning of floating animation */
+    animation: float 3s ease-out infinite;
+}
+@keyframes float{
+    50%{
+        transform: translateY(-15px);
+    }
+}
+#shadow{
+    position: absolute;
+    height: 110px;
+    border-radius: 2em;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(240, 248, 255, 0.128);
+    filter: blur(3px);
+    animation: shrink 3s ease-out infinite;
+}
+@keyframes shrink{
+    0%{
+        width: 50%;
+    }
+    50%{
+        width: 48%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+/* End of floating animation */
+
+/* Editing the comments */
+.allcommentsdata{
+    #nameandcomment{
+        border-bottom: solid rgba(255, 255, 255, .5);
+        margin-bottom: 2em;
+    }
+    #commentusernamecontainer{
+        text-align: left;
+        color: rgba(255, 255, 255, .5);
+        width: fit-content;
+    }
+    #commentcontainer{
+        text-align: left;
+        border-radius: 10px;
+        padding-left: 1em;
+        width: fit-content;
+    }
+}
+
+#contactheader{
+    font-size: 25px;
+    width: fit-content;
+    text-align: left;
+}

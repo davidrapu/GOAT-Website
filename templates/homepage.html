@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOAT</title>
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='images/football-award.ico')}}">
+
+</head>
+<body>
+  {% extends 'base.html'%}
+  {% block main %}
+
+    
+    <div class = "homeintrocontainer">
+      <h1>Welcome</h1><br>
+      <p class="lead">
+        To our tribute to 2 of football's best icons: <b>Cristiano Ronaldo and Lionel Messi.</b>
+        Discover the high-quality trips of Cristiano Ronaldo and Lionel Messi, from their humble 
+        beginnings to their ascent to international stardom.
+        Explore the pivotal moments and defining suits which have fashioned their careers and
+        cemented their reputations as footballing royalty. Dive into achievements of 
+        Cristiano Ronaldo and Lionel Messi, from a couple of Ballon d'Or awards to their 
+        several league titles and European triumphs.<br>
+      </p><br>
+      <p>
+        <a id="bttn" href="{{url_for('comparison')}}" class="btn btn-lg btn-light fw-bold border-white bg-white mb-5">Learn more</a>
+      </p>
+    </div>
+  {% endblock %}
+</body>
+</html>

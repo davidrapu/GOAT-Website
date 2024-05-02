@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messi</title>
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='images/football-award.ico')}}">
+</head>
+
+<body>
+  {% extends 'base.html'%}
+  {% block main %}
+
+      <div id="introcontainer" style="margin-top: 0.5em;" class="container text-center">
+        <div id="rowheader" class="row">
+          <div class="col"></div>
+          <div class="col-10"><h1>Lionel Messi</h1></div>
+          <div class="col"></div>
+        </div>
+        <div class="row">
+          <p class="lead">
+            Lionel Messi, born on June 24, 1987, in Rosario, Argentina, is widely regarded as 
+            one of the greatest footballers in history. From his early days at FC Barcelona's 
+            La Masia academy to his iconic moments on the world stage, Messi has mesmerized fans 
+            with his extraordinary talent, unmatched skill, and unparalleled dedication to the game. 
+            With numerous league titles, Champions League triumphs, and a record seven Ballon d'Or awards 
+            to his name, Messi's impact on football is undeniable. Beyond his on-field exploits, 
+            Messi's humility, sportsmanship, and commitment to excellence have made him a global 
+            icon and inspiration to millions. As he continues to showcase his brilliance with Paris Saint-Germain, 
+            Messi's legacy as a footballing legend is firmly cemented in history.
+          </p>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="videocontainer">
+        <iframe height="400px" width="100%"
+          src="https://www.youtube.com/embed/PSanJ5swYBM?si=0vloLOlOoTi0pdWP" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+        </iframe>
+      </div>
+
+
+
+      
+
+
+      <section id="intro" class="hidden">
+        <p class="sectiondata">
+          Lionel Messi's illustrious career is marked by an unparalleled collection of prestigious 
+          awards and titles. He has been named the Best FIFA Men's Player a record 8 times, won the 
+          Ballon d'Or 8 times, and been recognized as the UEFA Best Player in Europe on 3 occasions. 
+          Messi has also claimed the title of Top Goal Scorer 23 times, been named Player of the Year 
+          10 times, and won the TM-Player of the Season award 4 times. His trophy cabinet boasts 4 UEFA 
+          Champions League titles, 3 FIFA Club World Cup victories, 10 Spanish league championships, 
+          3 UEFA Super Cups, 7 Spanish Cup triumphs, and 8 Spanish Super Cup wins.
+        </p>
+      </section>
+      <section id="intro" class="hidden">
+        <p class="sectiondata">
+          On the international stage, Messi has won the FIFA World Cup in 2022 and the Copa América in 
+          2021, in addition to an Olympic gold medal. He has also claimed the French league title twice 
+          and the French League Cup once since joining Paris Saint-Germain. Messi's unparalleled 
+          achievements and accolades cement his status as one of the greatest footballers of all time.
+        </p>
+      </section>
+      <section id="intro" class="hidden">
+        <p class="sectiondata">
+          Besides his extraordinary achievement in soccer, Messi's impact extends past sports. 
+          His impact prolonged to the global community, for his charitable and humanitarian work. 
+          Through his charitable basis and numerous initiatives, Messi has made big contributions 
+          to society, used his platform for social reasons and help deprived communities. 
+          In short, Lionel Messi's adventure from one team to another, till his retirement 
+          at Inter Miami is a testimony to his lasting legacy as a soccer icon. With almost 
+          a hundred awards and an unprecedentedly a successful profession, Messi's fame 
+          indisputable, leaving an indelible mark on the arena of soccer that destiny 
+          generations will remember. It will be praised and remembered for plenty years.
+        </p>
+      </section>
+
+
+
+
+
+
+      <div class="hidden">
+        <div class="row text-center">
+          <div class="col"></div>
+          <div class="col-7"><h1 class="teamawardsheader">Teams Played For</h1></div>
+          <div class="col"></div>
+        </div>
+      </div>
+      <section class="hidden">
+        <p class="sectiondata">
+          <img class="floaterimage" src="{{url_for('static', filename = 'images/argentina.jpeg')}}" alt="Argentina Team Logo">
+          Lionel Messi's contributions to the Argentina National Team have been remarkable since 
+          his debut in 2005. With an impressive tally of 106 goals and 56 assists, Messi has been 
+          a pivotal figure in the team's success. His performances in prestigious tournaments like 
+          the Copa America and FIFA World Cup have been instrumental in Argentina's campaigns. 
+          Additionally, Messi's impact extends beyond South America, as evidenced by his triumph in 
+          the Conmebol-UEFA Cup of Champions, showcasing his versatility and excellence on the international stage.
+        </p>
+      </section>
+      <section class="hidden" style="margin-top: 4.5em;">
+        <p class="sectiondata">
+          <img class="floaterimage" src="{{url_for('static', filename = 'images/barcelona.jpeg')}}" alt="Barcelona Team Logo">
+          Lionel Messi's tenure at FC Barcelona, spanning from 2000 to 2021, is widely regarded as his 
+          best period. During this time, Messi amassed an astonishing total of 672 goals and 303 assists, 
+          establishing himself as one of the greatest footballers of all time. His dominance in club competitions, 
+          including winning the UEFA Champions League four times, La Liga ten times, Copa del Rey seven times, 
+          Supercopa de España eight times, and UEFA Super Cup three times, reflects his unparalleled success and 
+          impact on the team. Furthermore, Messi's six Ballon d'Or awards during this period highlight his individual 
+          brilliance and consistent excellence, making it a golden era for both Messi and FC Barcelona.
+        </p>
+      </section>
+      <section class="hidden" style="margin-top: 4.5em;">
+        <p class="sectiondata">
+          <img class="floaterimage" src="{{url_for('static', filename = 'images/psg.png')}}" alt="Paris Saint-Germain Team Logo">
+          Lionel Messi's brief stint at Paris Saint-Germain F.C. from 2021 to 2023 showcased his continued 
+          impact on the football world. Despite his relatively short time at the club, Messi managed to 
+          contribute significantly, scoring 32 goals and providing 35 assists. His presence helped Paris 
+          Saint-Germain secure domestic titles such as Ligue 1 twice, Coupe de France once, Coupe de la Ligue 
+          once, and Trophée des Champions once. Additionally, Messi's individual brilliance was recognized with 
+          another Ballon d'Or award during his time with the club, further solidifying his status as one of 
+          the greatest players of all time.
+        </p>
+      </section>
+      <section class="hidden" style="margin-top: 3em;">
+        <p class="sectiondata">
+          <img class="floaterimage" src="{{url_for('static', filename = 'images/intermiami.jpeg')}}" alt="Intermiami Team Logo">
+          Lionel Messi's tenure at Inter Miami CF, starting in 2023, signifies a new chapter in his illustrious 
+          career. Despite the relatively short duration, Messi has already left his mark, scoring 16 goals and 
+          providing 7 assists for the team. His impact has been profound, as evidenced by winning the Ballon d'Or 
+          once during his time at the club. Additionally, Messi's presence has contributed to Inter Miami CF's 
+          success, securing an MLS Cup title under his leadership. Messi's arrival at Inter Miami CF marks an 
+          exciting era for the club and further cements his legacy as a footballing icon across different leagues 
+          and continents.
+        </p>
+      </section>
+
+
+
+    {% endblock %}
+    </div>
+</body>
+</html>

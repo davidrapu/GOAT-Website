@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Details</title>
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='images/football-award.ico')}}">
+</head>
+<body>
+    {% extends 'base.html'%}
+    {% block main %}
+
+      <div class="container mt-5">
+        <div class="row pb-4">
+          <div id="contactheader" class="col"><strong>Contact Details</strong></div>
+        </div>
+        <div style="text-align: left;" class="row">
+          <ul>
+            <li>Author: David Rapu</li>
+            <li>Phone Number: +447918338002</li>
+            <li>Email: dr24588@essex.ac.uk</li>
+          </ul>
+        </div>
+      </div>
+
+
+
+
+    {% endblock %}
+</body>
+</html>

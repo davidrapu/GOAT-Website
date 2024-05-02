@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion</title>
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='images/football-award.ico')}}">
+    
+</head>
+<body>
+    {% extends 'base.html'%}
+    {% block main %}
+      <div id="shadow"></div>
+      <form class="formcontainer" id="commentform">
+        <div class="mb-3">
+          <label class="form-label">Name</label>
+          <input type="textarea" placeholder="Anonymous" list="datalistOptions" class="form-control" id="namevalue" name="username" required>
+          <datalist id="datalistOptions">
+            <option value="Anonymous">
+          </datalist>
+          <div id="namehelp" class="form-text">Feel Free to keep this Anonymous</div>
+        </div>
+        <div class="mb-3">
+          <textarea placeholder="Type your comment" style="height: 100px;" id="commentvalue" name="comment" class="form-control" required></textarea>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+          <label class="form-check-label" for="exampleCheck1">Are you sure you want to post this</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+      <div class="allcommentsdata">
+        <div id="commenthead" class="container">
+          <h2 class="my-5" style="text-align: left;">Comments</h2>
+        </div>
+          {% for comment in comments %}
+            <!-- Box to hold the name and the comment -->
+            <div class="col" id="nameandcomment">
+              <!-- Box to hold the name -->
+              <div class="row" id="commentusernamecontainer">
+                <p>{{comment.User.user_name}}</p>
+              </div>
+              <!-- Box to hold the comment -->
+              <div class="row" id="commentcontainer">
+                <p>{{comment.comment}}</p>
+              </div>
+            </div>
+          {%endfor%}
+      </div>
+    {%endblock%}
+    <!-- <script src="{{url_for('static', filename = 'js/commenting.js')}}"></script> -->
+</body>
+</html>
