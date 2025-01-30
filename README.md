@@ -15,7 +15,7 @@ To run GOAT, you'll need Python and Flask installed on your machine. Follow thes
 3. Install Flask SQLAlchemy
 4. Install Flask Migrate
 5. Unzip the website folder
-5. Run the Flask app on your Command Prompt
+5. Run the Flask app on your terminal
 
 ## Usage
 Once the Flask app is running, users can access GOAT through their web browser. They can:
